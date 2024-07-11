@@ -1,0 +1,456 @@
+  /* Main */
+  .main-body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  body {
+    background-color: #f5f5dc;
+  }
+
+  /* All Container */
+  .container {
+    /* border: 1px solid #000000; */
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .container > * {
+    flex-grow: 1;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  /* Attack */
+  .attack {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    padding-inline-start: 40px;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+  ul span {
+    height: 20px;
+    width: 30px;
+    vertical-align: middle;
+  }
+
+  ul span img {
+    position: relative;
+    width: 15px; /* Make the image fill the entire width of the span */
+    height: 15px; /* Make the image fill the entire height of the span */
+    object-fit: cover;
+  }
+
+  ul li span:hover {
+    padding: 0.7em;
+    margin: 0.7em 0;
+    cursor: pointer;
+  }
+
+  .t-type {
+    border-style: solid none;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0.25em;
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-caps: small-caps;
+    font-variant-alternates: normal;
+    font-variant-position: normal;
+    font-size: 10pt;
+    color: #f8f8f8;
+    text-shadow: 0 1px 1px #807870;
+  }
+
+  /* 
+  .selected img {
+    width: 30px; /* Make the image fill the entire width of the span */
+  /* height: 30px; /* Make the image fill the entire height of the span 
+  } */
+
+  /* Effectiveness */
+  .effectiveness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+
+  .effectiveness-content {
+    display: flex;
+    position: relative;
+    height: 594.2;
+  }
+
+  .arrow {
+    align-self: center;
+  }
+
+  .number {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .material-symbols-outlined {
+    color: rgb(123, 120, 120);
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+    font-size: 350px; /* Set the font size to match the container width */
+    transform: scaleY(0.5);
+  }
+
+  /* d-choose for selected type in defense */
+
+  .d-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    height: 594.2px;
+  }
+
+  .d-choose:hover {
+    cursor: not-allowed;
+  }
+
+  .d-choose-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .d-choose .imgs {
+    border: none;
+    border-radius: 10px;
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 2px; /* Adjusted padding */
+    object-fit: cover;
+  }
+
+  .d-choose img {
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .d-choose span {
+    font-size: 25 px;
+    color: white;
+  }
+
+  /* Defense */
+
+  .defense {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .defense .defense-content .types {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .defense .types {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .defense .types .btn-type {
+    border-radius: 10px;
+    color: black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-type img {
+    height: 50px;
+    width: 50px;
+    border: 0px transparent;
+  }
+
+  .btn-type span {
+    font-size: 25 px;
+    color: black;
+  }
+
+  .modal-content {
+    position: fixed;
+    right: 50px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(213, 211, 208);
+    box-sizing: border-box;
+  }
+
+  table {
+    border: none;
+    border-collapse: collapse;
+  }
+
+  th {
+    border: none;
+    border-radius: 10px;
+    width: 80px; /* Adjusted width */
+    height: 80px; /* Adjusted height */
+    position: relative;
+  }
+
+  th button {
+    border: none;
+    border-radius: 10px;
+    width: 50px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px; /* Adjusted padding */
+  }
+
+  th button img {
+    position: relative;
+    top: 5px;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 2px; /* Added margin between image and text */
+  }
+
+  th button span {
+    color: white;
+    margin-top: auto;
+    font-size: 10px;
+  }
+
+  /* For Pokedata */
+
+  .type-selector {
+    width: 400px;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .type-selector table {
+    
+  } */
+
+  .selected1,
+  .selected2 {
+    border: 2px solid rgb(22, 26, 22);
+  }
+
+  #pokemon-search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #pokemon-search-form input {
+    display: block;
+    width: 100%;
+    margin-top: 10px; /* Adjust the margin to create space between the table and the input */
+    margin-bottom: 10px;
+  }
+
+  #pokemon-search-form button[type="submit"] {
+    border-radius: 8px;
+    align-self: center; /* Align button to the end of the form */
+  }
+
+  .poke-display {
+    width: 70%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+  }
+
+  .poke-display .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .poke-display .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .poke-display .pokemon img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .poke-display .pokemon .searched {
+    width: 400px;
+    height: 400px;
+  }
+
+  .poke-display .strength {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .poke-display .strength table {
+    margin-top: 30px;
+  }
+
+  .types-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .team-builder {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .team-builder button {
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .team-builder div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .team-builder th {
+    border-bottom: 1px solid;
+  }
+
+  .team-builder th .row-cell {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .team-builder th img {
+    width: 50%;
+  }
+
+  .team-builder .selected {
+    background-color: #ffecd8;
+  }
+
+  .types-container .cont {
+    border: none;
+    border-radius: 10px;
+    width: 50px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px; /* Adjusted padding */
+    margin-bottom: 8px;
+    margin-right: 20px;
+  }
+
+  .row-cell .types-container .cont {
+    border: none;
+    border-radius: 10px;
+    width: 30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px; /* Adjusted padding */
+    margin-bottom: 8px;
+  }
+
+  .row-cell .cont img {
+    position: relative;
+    width: 100%;
+    top: 10px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+
+  .type-img {
+    position: relative;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    padding-bottom: 10px;
+  }
+
+  .cont span {
+    color: white;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 12px;
+  }

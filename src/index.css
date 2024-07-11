@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #d1fae5;
+}
+
+.type-hover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.t-type {
+  border-style: solid none;
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.25em;
+  font-variant: small-caps;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-variant-caps: small-caps;
+  font-variant-alternates: normal;
+  font-variant-position: normal;
+  font-size: 10pt;
+  color: #f8f8f8;
+  text-shadow: 0 1px 1px #807870;
+}
+
+.type-none {
+  background-color: white;
+}
+
+.type-normal {
+  background-color: #aab09f;
+}
+
+.type-fire {
+  background-color: #ea7a3c;
+}
+
+.type-water {
+  background-color: #539ae2;
+}
+
+.type-electric {
+  background-color: #e5c531;
+}
+
+.type-grass {
+  background-color: #71c558;
+}
+
+.type-ice {
+  background-color: #70cbd4;
+}
+
+.type-fighting {
+  background-color: #cb5f48;
+}
+
+.type-poison {
+  background-color: #b468b7;
+}
+
+.type-ground {
+  background-color: #cc9f4f;
+}
+
+.type-flying {
+  background-color: #7da6de;
+}
+
+.type-psychic {
+  background-color: #e5709b;
+}
+
+.type-bug {
+  background-color: #94bc4a;
+}
+
+.type-rock {
+  background-color: #b2a061;
+}
+
+.type-ghost {
+  background-color: #846ab6;
+}
+
+.type-dragon {
+  background-color: #6a7baf;
+}
+
+.type-dark {
+  background-color: #736c75;
+}
+
+.type-steel {
+  background-color: #89a1b0;
+}
+
+.type-fairy {
+  background-color: #e397d1;
+}
